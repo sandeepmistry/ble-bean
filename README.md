@@ -50,7 +50,7 @@ connectedBean.requestTemp(callback(error));
 
 You can set the led color (in this case to a random color) with:
 ```
-connectedBean.setColor(new Buffer([255,255,255]), callback(error));
+connectedBean.setColor(r, g, b, callback(error));
 ```
 
 If theres something I haven't implemented you can create it yourself with the send command. See commands.js for commandBuffers to use:
@@ -75,18 +75,18 @@ connectedScratch.on("scratch1", callback(data));
 
 
 ###CHANGELOG
-0.1.0 
+0.1.0
 first
 
 0.2.0
 cleaned up scanning in the example and the package.json file
 
-0.3.0 and 0.4.0 
-add scratch characteristics with notify 
+0.3.0 and 0.4.0
+add scratch characteristics with notify
 fix acellerometer readings
 better logging in example, took console.log out of library
 
-0.5.0 
+0.5.0
 scale acceleromter readings
 added readme with changelog
 
@@ -105,7 +105,7 @@ Better readme, no code changes.
 New Serial event for parsed serial data called 'serial'
 
 1.0.0
-Emitter callback signatures changed!! 
+Emitter callback signatures changed!!
 'read' emitter became 'raw'
 accell and serial changed removing the sequence since its handled internally now.
 Added requestTemp.
