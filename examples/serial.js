@@ -1,7 +1,7 @@
 /*jslint node: true */
 "use strict";
 
-/* 
+/*
  * This script requests the general BLE characteristics from the bean every second.
  * Requires a sketch on the Arduino to do a Serial.print() just like you were plugged
  * in over a serial cable. Any sketch will do.

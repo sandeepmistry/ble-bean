@@ -1,7 +1,7 @@
 /*jslint node: true */
 "use strict";
 
-/* 
+/*
  * This script sends the digital write 13 (for various reason Bean Pin 5) off and on.
  * I SUPER highly dont recommend you actually do it this way, this is just for testing.
  * Please see bean-serial for firmata.j

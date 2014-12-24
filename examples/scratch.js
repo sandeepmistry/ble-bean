@@ -1,7 +1,7 @@
 /*jslint node: true */
 "use strict";
 
-/* 
+/*
  * This script listens for data on the first two (of five available) Scratch characteristics
  * when this sketch is programmed to the Arduino:
  * https://punchthrough.com/bean/the-arduino-reference/setscratchdata/
