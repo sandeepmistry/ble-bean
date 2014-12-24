@@ -35,7 +35,7 @@ Bean.discover(function(bean){
     var readData = function() {
 
       //set random led colors between 0-255. I find red overpowering so red between 0-64
-      bean.setColor(new Buffer([getRandomInt(0,64),getRandomInt(0,255),getRandomInt(0,255)]),
+      bean.setColor(getRandomInt(0,64),getRandomInt(0,255),getRandomInt(0,255),
         function(){
           console.log("led color sent");
       });
@@ -73,7 +73,7 @@ var exitHandler = function exitHandler() {
     triedToExit = true;
     console.log('Turning off led...');
     clearInterval(intervalId);
-    connectedBean.setColor(new Buffer([0x0,0x0,0x0]), function(){});
+    connectedBean.setColor(0x0,0x0,0x0, function(){});
     //no way to know if succesful but often behind other commands going out, so just wait 2 seconds
     console.log('Disconnecting from Device...');
     setTimeout(connectedBean.disconnect.bind(connectedBean, function(){}), 2000);

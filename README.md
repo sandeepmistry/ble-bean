@@ -29,7 +29,7 @@ When that returns you're finally ready to use the ble-bean api:
 ```
 bean.requestTemp(callback);
 bean.requestAccell(callback);
-bean.setColor(color, callback); //where color is a buffer of r,g,b hex values
+bean.setColor(r, g, b, callback); // r, g, b are 0-255/0x00 - 0xff
 bean.write(data, callback); //where data is a buffer
 ```
 Huge gotcha here though, the callback to all api commands DO NOT GIVE YOU BACK YOUR DATA, they simply confirms that the request has left your computer.
