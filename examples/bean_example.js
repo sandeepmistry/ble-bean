@@ -1,8 +1,8 @@
 /*jslint node: true */
 
-/* 
+/*
  * Requests the accelerometer, temperature, and sets the color randomly evry second.
- * This requires no specific sketch on the Arduino. All of this is just talking to the bean's radio. 
+ * This requires no specific sketch on the Arduino. All of this is just talking to the bean's radio.
  */
 
 "use strict";
