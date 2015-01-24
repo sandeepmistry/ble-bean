@@ -1,8 +1,8 @@
 /*jslint node: true */
 
-/* 
+/*
  * Requests the general BLE characteristics from the bean every ten seconds.
- * This requires no specific sketch on the Arduino. All of this is just talking to the bean's radio. 
+ * This requires no specific sketch on the Arduino. All of this is just talking to the bean's radio.
  */
 
 "use strict";
@@ -49,7 +49,7 @@ Bean.discover(function(bean){
       });
 
       bean.readManufacturerName(function(manufacturer){
-        console.log("manufacturer", manufacturer);  
+        console.log("manufacturer", manufacturer);
       });
 
     }
